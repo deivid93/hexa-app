@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::name('Usuarios')
-     ->group(base_path('src/Usuarios/Infraestructura/Routes/web.php'));
+Route::get('/', function () {
+    return view('modUsuarios::admin');
+});
+
 
