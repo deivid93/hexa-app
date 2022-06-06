@@ -12,6 +12,7 @@ class UserEntity extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table = 'usuarios_lista';
     /**
      * The attributes that are mass assignable.
      *
@@ -19,6 +20,7 @@ class UserEntity extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'login',
         'email',
         'password',
     ];
